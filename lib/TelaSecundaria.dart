@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 class TelaSecundaria extends StatefulWidget {
-  const TelaSecundaria({Key? key}) : super(key: key);
+  //const TelaSecundaria({Key? key}) : super(key: key);
+
+  String texto;
+
+  TelaSecundaria(this.texto);
 
   @override
   State<TelaSecundaria> createState() => _TelaSecundariaState();
@@ -8,6 +12,7 @@ class TelaSecundaria extends StatefulWidget {
 
 class _TelaSecundariaState extends State<TelaSecundaria> {
   var _titulo = "Tela Secundaria";
+  var _mensagem = "Usuario: ";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +26,7 @@ class _TelaSecundariaState extends State<TelaSecundaria> {
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              Text("Segunda Tela")
+              Text("Usuario: ${widget.texto}")
             ],
           ),
         ),

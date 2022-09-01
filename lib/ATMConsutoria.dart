@@ -45,46 +45,48 @@ class _ATMConsultoriaState extends State<ATMConsultoria> {
         title: Text(_titulo),
         backgroundColor: Colors.green,
       ),
-      body: Container(
-        padding: EdgeInsets.all(32),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Image.asset(_imagemLogo),
-            Padding(
-              padding: EdgeInsets.only(top: 32),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  GestureDetector(
-                    onTap: _abrirEmpresa,
-                    child: Image.asset("imagens/menu_empresa.png"),
-                  ),
-                  GestureDetector(
-                    onTap: _abrirServico,
-                    child: Image.asset("imagens/menu_servico.png"),
-                  )
-                ],
+      body: SingleChildScrollView(
+        child: Container(
+          padding: EdgeInsets.all(32),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Image.asset(_imagemLogo),
+              Padding(
+                padding: EdgeInsets.only(top: 32),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    GestureDetector(
+                      onTap: _abrirEmpresa,
+                      child: Image.asset("imagens/menu_empresa.png"),
+                    ),
+                    GestureDetector(
+                      onTap: _abrirServico,
+                      child: Image.asset("imagens/menu_servico.png"),
+                    )
+                  ],
+                ),
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 32),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  GestureDetector(
-                    onTap: _abrirCliente,
-                    child: Image.asset("imagens/menu_cliente.png"),
-                  ),
-                  GestureDetector(
-                    onTap: _abrirContato,
-                    child: Image.asset("imagens/menu_contato.png"),
-                  )
-                ],
-              ),
-            )
-          ],
+              Padding(
+                padding: EdgeInsets.only(top: 32),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    GestureDetector(
+                      onTap: _abrirCliente,
+                      child: Image.asset("imagens/menu_cliente.png"),
+                    ),
+                    GestureDetector(
+                      onTap: _abrirContato,
+                      child: Image.asset("imagens/menu_contato.png"),
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
