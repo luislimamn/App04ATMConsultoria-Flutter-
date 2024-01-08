@@ -15,12 +15,36 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
       appBar: AppBar(
         title: Text(_titulo),
         backgroundColor: Colors.orange,
+        foregroundColor: Colors.white,
       ),
       body: Container(
         padding: EdgeInsets.all(32),
         child: SingleChildScrollView(
           child: Column(
             children: <Widget>[
+              ElevatedButton(
+                  style: const ButtonStyle(
+                    backgroundColor: MaterialStatePropertyAll<Color>(Colors.indigo),
+                  ),
+                  child: const Text(
+                    "Segunda Tela",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.white
+                    ),
+                  ),
+                  //color: Colors.orange,
+                  //padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
+                onPressed: (){
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => TelaSecundaria("Andr3ziim")
+                      )
+                  );
+                },
+              ),
+              /*
               RaisedButton(
                 child: Text("Segunda Tela"),
                 padding: EdgeInsets.all(15),
@@ -33,6 +57,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                   );
                 },
               )
+              */
             ],
           ),
         ),

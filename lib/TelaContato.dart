@@ -15,6 +15,7 @@ class _TelaContatoState extends State<TelaContato> {
       appBar: AppBar(
         title: Text(_titulo),
         backgroundColor: Colors.greenAccent,
+        foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -30,7 +31,7 @@ class _TelaContatoState extends State<TelaContato> {
                     child: Text(
                       "Contato",
                       style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 22,
                           color: Colors.greenAccent
                       ),
                     ),
@@ -40,19 +41,31 @@ class _TelaContatoState extends State<TelaContato> {
               Padding(
                 padding: EdgeInsets.only(top: 16),
                 child: Text(
-                    "Email: consultoria@atm.com.br"
+                  "Email: consultoria@atm.com.br",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.greenAccent
+                  ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 16),
                 child: Text(
-                    "Telefone: (11) 3333-2222"
+                  "Telefone: (11) 3333-2222",
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.greenAccent
+                  ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 0),
                 child: Text(
-                    "WhatApp: (11) 99999-8888"
+                  "WhatApp: (11) 99999-8888",
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors.greenAccent
+                  ),
                 ),
               )
             ],

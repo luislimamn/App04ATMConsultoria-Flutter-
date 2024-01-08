@@ -15,6 +15,7 @@ class _TelaServicoState extends State<TelaServico> {
       appBar: AppBar(
         title: Text(_titulo),
         backgroundColor: Colors.cyan,
+        foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -30,8 +31,8 @@ class _TelaServicoState extends State<TelaServico> {
                     child: Text(
                       "Nossos Serviços",
                       style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.cyan
+                        fontSize: 22,
+                        color: Colors.cyan
                       ),
                     ),
                   )
@@ -40,19 +41,31 @@ class _TelaServicoState extends State<TelaServico> {
               Padding(
                 padding: EdgeInsets.only(top: 16),
                 child: Text(
-                    "Consultoria"
+                  "Consultoria",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.cyan
+                  ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 16),
                 child: Text(
-                    "Calculo de Preços"
+                  "Calculo de Preços",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.cyan
+                  ),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 16),
                 child: Text(
-                    "Acompanhamento de Projetos"
+                  "Acompanhamento de Projetos",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.cyan
+                  ),
                 ),
               )
             ],

@@ -20,6 +20,7 @@ class _TelaSecundariaState extends State<TelaSecundaria> {
       appBar: AppBar(
         title: Text(_titulo),
         backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
       ),
       body: Container(
         padding: EdgeInsets.all(32),

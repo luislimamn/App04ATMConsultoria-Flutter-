@@ -44,6 +44,7 @@ class _ATMConsultoriaState extends State<ATMConsultoria> {
       appBar: AppBar(
         title: Text(_titulo),
         backgroundColor: Colors.green,
+        foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
         child: Container(

@@ -15,6 +15,7 @@ class _TelaClienteState extends State<TelaCliente> {
       appBar: AppBar(
         title: Text(_titulo),
         backgroundColor: Colors.lightGreen,
+        foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -30,8 +31,8 @@ class _TelaClienteState extends State<TelaCliente> {
                     child: Text(
                       "Clientes",
                       style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.lightGreen
+                        fontSize: 22,
+                        color: Colors.lightGreen
                       ),
                     ),
                   )
@@ -42,14 +43,22 @@ class _TelaClienteState extends State<TelaCliente> {
                 child: Image.asset("imagens/cliente1.png"),
               ),
               Text(
-                  "Empresa de Software"
+                "Empresa de Software",
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.lightGreen
+                ),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 16),
                 child: Image.asset("imagens/cliente2.png"),
               ),
               Text(
-                  "Empresa de Auditoria"
+                "Empresa de Auditoria",
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.lightGreen
+                ),
               )
             ],
           ),
